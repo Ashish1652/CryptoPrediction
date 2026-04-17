@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+<div class="card bg-success text-white ">
+    <div class="card-body mx-auto ">
+        <p class="card-text fs-1 "> BLOGS </p>
+    </div>
+</div>
+
+
+<div class="container  mt-5">
+    <div class="row ">
+        {% for i in rec %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow mt-5 gap-10 p-5 h-100 w-100">
+                <img src="{{i.Image.url}}" class="card-img-top w-70 h-60 mx-auto" alt="{{ item.title }}">
+                <div class="card-body h-100">
+                    <h4 class="card-title fw-bold p-2">{{i.Title}}</h4>
+                    <p class="card-text">{{i.Summery}}</p>
+                    <p class="card-text fs-3">{{i.Name}}</p>
+                    <p class="card-text fs-6">{{i.Up_time}}</p>
+
+
+
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p>No items available.</p>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+{% endblock body %}

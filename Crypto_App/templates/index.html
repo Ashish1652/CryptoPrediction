@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+
+<div class="carousel slide " id="carouselExampleCaptions">
+    <div class="carousel-indicators">
+        <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                data-bs-target="#carouselExampleCaptions" type="button"></button>
+        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                type="button"></button>
+        <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                type="button"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img alt="..." class="d-block w-100 custom-height" src="static/Image/gold_bull.jpg">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Leon Luow, Nobel Peace Prize nominee</h5>
+                <p> Every informed person needs to know about Bitcoin because it might be one of the world’s most
+                    important developments. </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img alt="..." class="d-block w-100 custom-height" src="static/Image/Red_Gold_bull.jpg">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Eric Schmidt, CEO of Google</h5>
+                <p>Bitcoin is a remarkable cryptographic achievement, and the ability to create something that is not
+                    duplicable in the digital world has enormous value</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img alt="..." class="d-block w-100 custom-height" src="static/Image/cyberpunk-bitcoin-illustration.jpg">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Edmund Moy, 38th Director of the United States Mint</h5>
+                <p>Bitcoin, and the ideas behind it, will be a disrupter to the traditional notions of currency. In the
+                    end, currency will be better for it.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<!--  card -->
+<h5 align="center" class="mt-5 mb-5 p-10 w-75 mx-auto fs-1 text-success">Insights</h5>
+
+<div class="card-group mt-5 gap-10 p-5 w-75 mx-auto ">
+    <div class="card border">
+        <img alt="..." class="card-img-top h-50" src="static/Image/bitcoin.jpg">
+        <div class="card-body">
+            <h5 class="card-title">Bitcoin</h5>
+            <p class="card-text">Now we have finally arrived at Bitcoin. Almost everyone has heard of it these days,
+                even my grandmother asked me the other day what exactly a Bitcoin is. Bitcoin is the very first
+                decentralized digital currency ever created, and is based on cryptography, decentralization and
+                blockchain technology.The coin was created by Satoshi Nakamoto. But no one knows who this person is;
+                Satoshi has always remained anonymous. The special thing about Bitcoin is that it was predetermined how
+                many coins will be available.</p>
+        </div>
+
+    </div>
+    <div class="card  ">
+        <img alt="..." class="card-img-top  h-50" src="static/Image/P2P CRYPTO.jpg">
+        <div class="card-body  ">
+            <h5 class="card-title"> P2P Cryptocurrency Exchanges </h5>
+            <p class="card-text">A P2P cryptocurrency exchange is a decentralized structure whereby users may easily
+                trade cryptocurrencies free from an intermediary. Unlike centralized exchanges, where deals are handled
+                under a central authority, P2P crypto exchanges allow direct transactions between buyers and sellers.
+                The actual cryptocurrency transaction occurs between the two linked parties, even if the platform is a
+                facilitator by giving individuals a marketplace to publish their offers or requests.</p>
+        </div>
+
+    </div>
+    <div class="card ">
+        <img alt="..." class="card-img-top  h-50" src="static/Image/mining.jpg">
+        <div class="card-body  ">
+            <h5 class="card-title">Bitcoin Mining</h5>
+            <p class="card-text">Bitcoin mining is the process by which new bitcoins are introduced into circulation and
+                transactions are verified and added to the public ledger, known as the blockchain.
+
+                Miners solve complex math problems using powerful computers to add transaction blocks to the blockchain,
+                earning bitcoins and fees as rewards.
+
+                This essential process generates new bitcoins, dwindling over time by design, and safeguards the network
+                against fraud.</p>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="shadow mt-5 card mb-3 mx-auto " style="max-width: 1140px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img alt="..." class="img-fluid rounded-start" src="static/Image/about_2.jpg">
+        </div>
+        <div class="col-md-8 p-3">
+            <div class="card-body">
+                <h5 class="card-title">Cryptocurrency Exchange</h5>
+                <p class="card-text">Cryptocurrency exchanges are digital marketplaces that enable users to buy and sell
+                    cryptocurrencies like Bitcoin, Ethereum, and Tether. The Binance exchange is the largest crypto
+                    exchange by trade volume..</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="shadow mt-5 card mb-3 mx-auto flex-shrink-0" style="max-width: 1140px;">
+    <div class="row g-0 ">
+
+        <div class="col-md-8 p-3 ">
+            <div class="card-body  ">
+                <h5 class="card-title">MAGNET</h5>
+                <p class="card-text">MAGNET tokens can be traded on centralized crypto exchanges and decentralized
+                    exchanges. The most popular exchange to buy and trade Magnet is MEXC, where the most active trading
+                    pair MAGNET/USDT has a trading volume of $55,372.95 in the last 24 hours. Other popular options
+                    include Raydium and BingX</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img alt="..." class="img-fluid rounded-end" src="static/Image/about_3.jpg">
+        </div>
+    </div>
+</div>
+
+
+<div class="shadow mt-5 card mb-3 mx-auto" style="max-width: 1140px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img alt="..." class="img-fluid rounded-start" src="static/Image/about_1.jpg">
+        </div>
+        <div class="col-md-8 p-3 ">
+            <div class="card-body ">
+                <h5 class="card-title">Bitcoin Rocket Ride</h5>
+                <p class="card-text">Bitcoin prices continue to rise and print fresh highs as speculation continues to
+                    grow around a favorable outlook toward crypto from the incoming Trump administration. To further
+                    support these rumors, leaks about a potential White House crypto expert appointment and rumors of
+                    Trumps social media companies interest in a buyout of crypto trading firm Bakkt has aided the
+                    rally. </p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card bg-success text-white mt-5">
+    <div class="card-body mx-auto ">
+        <p class="card-text fs-1 "> Start earning today </p>
+    </div>
+</div>
+{% endblock body %}

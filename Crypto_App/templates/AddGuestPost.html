@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% load widget_tweaks %}
+{% block body %}
+
+<h5 ALIGN="center" class="card-title fs-1  text-bg-success text-light display-15 ">ADD BLOGS</h5>
+
+<div class="card shadow mx-auto mt-5 py-4" style="width: 48rem; height:42rem">
+<div class="form-group mx-auto  p-2" style="width: 38rem;">
+    <form   action='add_blog' enctype="multipart/form-data" method="POST">
+
+   {% csrf_token %}
+
+        {{ form.Name|add_label_class:"label_class_1"  }}
+        {% render_field form.Name placholder="Name" class+="form-control mt-3" %}
+
+         {{ form.Title|add_label_class:"label_class_1 mt-3"  }}
+        {% render_field form.Title placholder="Title" class+="form-control mt-3" %}
+
+         {{ form.Summery|add_label_class:"label_class_1 mt-3"  }}
+        {% render_field form.Summery placholder="Name" class+="form-control mt-3" %}
+
+        {{ form.Image|add_label_class:"label_class_1"  }}
+        {% render_field form.Image  class+="form-control-file mt-3" %}
+
+
+<!--        {{ form.as_p }}-->
+<br>
+        <button class="btn btn-primary mt-4 shadow   " type="submit ">Add Blog</button>
+
+    </form>
+
+</div>
+</div>
+<!--<div class="card">-->
+<!--    <form action="process_addpost" method="post">-->
+<!--        {% csrf_token %}-->
+<!--    <div class="input-group mb-3 mt-3 w-50 mx-auto ">-->
+<!--        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>-->
+<!--        <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input" class="form-control"-->
+<!--               type="text" name="Name"> <br>-->
+<!--    </div>-->
+
+<!--    <div class="input-group mb-3 mt-3 w-50 mx-auto ">-->
+<!--        <span class="input-group-text" id="inputGroup-sizing-default">Title</span>-->
+<!--        <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input" class="form-control"-->
+<!--               type="text" name="Title"> <br>-->
+<!--    </div>-->
+
+<!--&lt;!&ndash;    <div class="input-group mb-3 mt-3 w-50 mx-auto ">&ndash;&gt;-->
+<!--&lt;!&ndash;        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input" class="form-control"&ndash;&gt;-->
+<!--&lt;!&ndash;               type="text"> <br>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+
+<!--    <div class="input-group mb-3 mt-3 w-50 mx-auto">-->
+<!--        <span class="input-group-text">Summery</span>-->
+<!--        <textarea aria-label="With textarea" class="form-control" name="Summery"></textarea>-->
+<!--    </div>-->
+
+<!--    <button type="submit "  class="btn btn-primary" >Add Blog</button>-->
+
+<!--    </form>-->
+<!--</div>-->
+
+{% endblock body %}
